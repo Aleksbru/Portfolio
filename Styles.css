@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     background: #f5f5f5 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAClJREFUGFdjZGVlTfv9+/csBiTAiMyBseGCr4WEGkTfvWsASeBXiWwMAFXSCAYXWQS3AAAAAElFTkSuQmCC') repeat;
+    viewport-fit: width=device-width, initial-scale=1.0;
 }
 /* Border around the whole page*/
 .wrapper {
@@ -80,6 +81,8 @@ section img {
     margin: 0 auto 20px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 /* making images hover*/
@@ -92,6 +95,8 @@ section table {
     width: 100%;
     margin: 20px auto;
     border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 section table, section th, section td {
@@ -160,8 +165,32 @@ nav a:hover {
         margin-bottom: 10px;
     }
 
+    section img {
+        margin: 0 auto 10px;
+    }
+   
+    section table, section th, section td {
+        font-size: 11px;
+    }
+
     nav li {
         display: inline-block;
         margin-right: 10px;
     }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    nav.active ul {
+        display: block;
+    }
+
 }
