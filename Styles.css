@@ -1,8 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
     background: #f5f5f5 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAClJREFUGFdjZGVlTfv9+/csBiTAiMyBseGCr4WEGkTfvWsASeBXiWwMAFXSCAYXWQS3AAAAAElFTkSuQmCC') repeat;
+}
+.wrapper {
     border: 5px solid #ff6600;
     border-radius: 15px;
+    margin: 20px auto;
 }
 
 h1 {
@@ -10,13 +14,19 @@ h1 {
     background-color: #ff6600;
     color: #ffffff;
     padding: 20px;
+    margin-top: 0;
 }
 
 h2 {
     text-align: center;
-    color: #000000;
+    color: #333;
     margin: 2px;
 }
+
+h2:last-child{
+    color: #FF0000; 
+}
+
 .header-container {
     background-color: #ffffff;
     color: #333;
@@ -92,6 +102,16 @@ section:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section#Contact h2 {
+    background-color: #333;
+    border-radius: 50px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px;
+    margin: 2px;
+    margin-bottom: 20px;
+}
+
 nav {
     background-color: #333;
     border: 5px solid #333;
@@ -100,7 +120,10 @@ nav {
     color: #ffffff;
     padding: 10px;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 nav ul {
@@ -118,7 +141,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     background-color: #333;
-    padding: 10px;
+    padding: 12px;
     border-radius: 50px;
     transition: background-color 0.33s ease-in-out, color 0.33s ease-in-out;
 }
