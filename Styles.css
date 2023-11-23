@@ -1,14 +1,16 @@
+/* Set the font and background*/
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     background: #f5f5f5 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAAClJREFUGFdjZGVlTfv9+/csBiTAiMyBseGCr4WEGkTfvWsASeBXiWwMAFXSCAYXWQS3AAAAAElFTkSuQmCC') repeat;
 }
+/* Border around the whole page*/
 .wrapper {
     border: 5px solid #ff6600;
     border-radius: 15px;
     margin: 20px auto;
 }
-
+/* Main heading style*/
 h1 {
     text-align: center;
     background-color: #ff6600;
@@ -16,17 +18,14 @@ h1 {
     padding: 20px;
     margin-top: 0;
 }
-
+/* Sub heading style*/
 h2 {
     text-align: center;
     color: #333;
     margin: 2px;
 }
 
-h2:last-child{
-    color: #FF0000; 
-}
-
+/* Style for h2 + nav*/
 .header-container {
     background-color: #ffffff;
     color: #333;
@@ -41,7 +40,7 @@ h2:last-child{
 .header-container:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+/* styles for third headings*/
 h3 {
     background-color: #333;
     border-radius: 50px;
@@ -51,12 +50,14 @@ h3 {
     margin: 2px;
     margin-bottom: 20px;
 }
+/* style for the footer*/
 footer {
     text-align: center;
     background-color: #ff6600;
     color: #ffffff;
     padding: 20px;
 }
+/* styling all the specific sections*/
 section {
     background-color: #ffffff;
     color: #333;
@@ -69,11 +70,11 @@ section {
     overflow: hidden;
     transition: box-shadow 0.33s ease-in-out;
 }
-
+/* aligning figure captions*/
 section figcaption {
     text-align: center;
 }
-
+/* styling the images*/
 section img {
     display: block;
     margin: 0 auto 20px;
@@ -81,12 +82,12 @@ section img {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
-
+/* making images hover*/
 section img:hover {
     transform: scale(0.9);
     border-color: #ff6600;
 }
-
+/* Adjusting table to look more uniform*/
 section table {
     width: 100%;
     margin: 20px auto;
@@ -97,11 +98,11 @@ section table, section th, section td {
     border: 4px solid #6e6e6e;
     padding: 10px;
 }
-
+/* very slight hover effect for sections*/
 section:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+/* Last sub heading style*/
 section#Contact h2 {
     background-color: #333;
     border-radius: 50px;
@@ -111,7 +112,7 @@ section#Contact h2 {
     margin: 2px;
     margin-bottom: 20px;
 }
-
+/* styling the navigation bar*/
 nav {
     background-color: #333;
     border: 5px solid #333;
@@ -137,6 +138,7 @@ nav li {
     margin-right: 15px;
 }
 
+/* animating navigation*/
 nav a {
     text-decoration: none;
     color: #fff;
@@ -150,6 +152,7 @@ nav a:hover {
     background-color: #ff6600;
     color: #fff;
 }
+/* Adjustments for smaller screens*/
 @media (max-width: 600px) {
     h2, h3 {
         padding: 10px;
