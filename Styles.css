@@ -27,7 +27,13 @@ h3 {
     margin: 2px;
     margin-bottom: 20px;
 }
-
+footer {
+    text-align: center;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 section {
     background-color: #ffffff;
     color: #333;
