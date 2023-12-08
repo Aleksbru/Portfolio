@@ -17,7 +17,11 @@
         table, th, td {
   border:1.2px solid black;
 }
+#numbers.hidden {
+        display: none;
+    }
         </style>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -56,6 +60,7 @@
             height="1056"/>
             <figcaption>All-in-one shampoo</figcaption>
           </figure>
+          <button id="alertButton">Can you click me, I need to tell you something</button>
         </section>
         <section id="Hobbies">
         <h3>Hobbies</h3>
@@ -91,6 +96,8 @@
                   <td>Phasellussemlectus</td>
                 </tr>
               </table>
+              <button id="btn-counter">Let's see how many times you can click me!!</button>
+              <p id="txt-counter">Clicks: 1</p>
     </section>
     <section id="Goals">
         <h3>Goals</h3>
@@ -180,7 +187,7 @@ Y88888888888888888888888888b                              "Y8888888888888888888b
 		
 		-->
         <figure>
-                <img src=Images/cool_frog.jpg alt="Toad on a motorcycle getting ready to race"/>
+                <img src="Images/cool_frog.jpg" alt="Toad on a motorcycle getting ready to race">
             <figcaption>Very Cool Frog</figcaption>
           </figure>
         </section>
@@ -191,9 +198,19 @@ Y88888888888888888888888888b                              "Y8888888888888888888b
                 <p>I can be contacted by email here: <a href='mailto&#58;&#37;6D%&#55;5tnu%7&#48;&#64;gm%&#54;1il&#46;%&#54;&#51;om'>mutnu&#112;&#64;&#103;&#109;a&#105;l&#46;com</a>
             </p>
         </section>
+        <section>
+            <h3>Number List</h3>
+            <div id="numbersContainer">
+                <button id="toggleButton">Toggle Number List</button>
+                <ol id="numbers"></ol>
+            </div>
+        </section>
     </main>
     <footer>&copy;Aleksandr Brudnyi, 2023
     </footer>
 </div>
+
+<script defer src="js/javascript.js"></script>
+
 </body>
 </html>

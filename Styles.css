@@ -157,6 +157,40 @@ nav a:hover {
     background-color: #ff6600;
     color: #fff;
 }
+/* Style for even count */
+.even {
+    color: #ff6600; 
+}
+
+/* Style for odd count */
+.odd {
+    color: #0077ff; 
+}
+
+/* Hovering over the alert button*/
+#alertButton {
+    position: relative;
+    overflow: hidden;
+}
+
+#alertButton::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: rgba(250, 246, 246, 0.9); 
+}
+
+#alertButton:hover::before {
+    visibility: visible;
+}
+
 /* Adjustments for smaller screens*/
 @media (max-width: 600px) {
     h2, h3 {
@@ -190,6 +224,43 @@ nav a:hover {
     }
 
     nav.active ul {
+        display: block;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    #dropdownBtn {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #dropdownList {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        list-style: none;
+        padding: 0;
+    }
+    
+    #dropdownList li {
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    #dropdownList li:hover {
+        background-color: #ddd;
+    }
+    
+    #dropdownList.show {
         display: block;
     }
 
