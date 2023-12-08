@@ -33,6 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("NO WAY!!! 100 CLICKS!!!");
         }
 
+        if (count === 200) {
+            alert("Maybe it\'s time to go outside...");
+        }
+
+
         // footer
         const footer = document.querySelector('footer');
         const currentYear = new Date().getFullYear();
