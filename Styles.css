@@ -226,42 +226,4 @@ nav a:hover {
     nav.active ul {
         display: block;
     }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    
-    #dropdownBtn {
-        background-color: #3498db;
-        color: white;
-        padding: 10px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    #dropdownList {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        list-style: none;
-        padding: 0;
-    }
-    
-    #dropdownList li {
-        padding: 10px;
-        cursor: pointer;
-    }
-    
-    #dropdownList li:hover {
-        background-color: #ddd;
-    }
-    
-    #dropdownList.show {
-        display: block;
-    }
-
 }
